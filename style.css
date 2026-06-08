@@ -51,10 +51,12 @@ body{
     color: white;
 
 }
-.action-btn{
+.action-btn, .equal-btn{
     background-color: #ff3b30;
     color: white;
 }
 .zero-btn{
     grid-column: span 2;
 }
+
+ 
