@@ -1,63 +1,60 @@
-*{
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:#f0f2f5;
+    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
 }
-fieldset{
-    border: 2px solid black;
-    width: 400px;
-    height: 500px;
-    margin: 50px auto;
-    border-radius: 10px;
+.main-container{
+    width : 320px;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow : 0px 10px 25px rgba(0,0,0,0.3);
 }
-h1{
-    text-align: center;
-    margin-top: 20px;
-    color: black;
-
-}
-#screen{
-    width: 300px;
-    height: 50px;
-    margin: 20px auto;
-    border: 2px solid black;
-    border-radius: 5px;
-    text-align: right;
-    padding-right: 10px;
-    font-size: 24px;
-}
-
-.btn{
-    width: 60px;
+#display-area{
+    width: 100%;
     height: 60px;
-    margin: 10px;
-    font-size: 24px;
-    border: 2px solid black;
-    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+    font-size: 2rem;
+    text-align: right;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+}
+.buttons-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.btn{
+    padding: 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
     cursor: pointer;
+    background-color: #e0e0e0;
+    transition: background-color 0.3s ease;
 }
-.btn:hover{
-    background-color: lightgray;
-}
-button:active{
-    background-color: gray;
-}
-button.operator{
-    background-color: orange;
+.btn:active{
+    transform: scale(0.95);
+    background-color: #bbb;
     color: white;
 }
-button.operator:hover{
-    background-color: darkorange;
+.op-btn, .equal-btn{
+    background-color: #ff9500;
+    color: white;
+
 }
-button.operator:active{
-    background-color: orangered;
+.action-btn{
+    background-color: #ff3b30;
+    color: white;
 }
-.click{
-    background-color: lightblue;
-}
-#all_btn{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.zero-btn{
+    grid-column: span 2;
 }

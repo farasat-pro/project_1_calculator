@@ -5,39 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
-    <script src="app.js" d ></script>
+    <script src="app.js" defer></script>
 </head>
 <body>
-    <div>
-        <h1>Calculator</h1>
-        <fieldset bod> 
-
-            <div id="screen" >
-                
-            </div>
-
-            <div id="all_btn">
-                <button class="btn">1</button>
-                <button class="btn">2</button>
-                <button class="btn">3</button>
-                <button class="btn">4</button>
-                <button class="btn">5</button>
-                <button class="btn">6</button>
-                <button class="btn">7</button>
-                <button class="btn">8</button>
-                <button class="btn">9</button>
-                <button class="btn">0</button>
     
-                <button  class="btn"  id="btn_plus" onclick="check_operation(1)" >+</button>
-                <button class="btn"  id="btn_minus" onclick="check_operation(2)" >-</button>
-                <button  class="btn" id="btn_divide" onclick="check_operation(3)" >/</button>
-                <button class="btn"  id="btn_multiply" onclick="check_operation(4)" >*</button>
-                <button  class="btn" id="btn_mode" onclick="check_operation(5)" >%</button>
-    
-                <button class="btn" id="click" onclick="calculate()" >=</button>
+    <div class="main-container">
+        <div id="display-area"></div>
 
-            </div>
-        </fieldset>
+        <div class="buttons-grid">
+            <button class="btn action-btn" id="clear-btn">C</button>
+            <button class="btn op-btn">%</button>
+            <button class="btn op-btn">/</button>
+            <button class="btn op-btn">*</button>
+
+            <button class="btn num-btn">7</button>
+            <button class="btn num-btn">8</button>
+            <button class="btn num-btn">9</button>
+            <button class="btn op-btn">-</button>
+
+            <button class="btn num-btn">4</button>
+            <button class="btn num-btn">5</button>
+            <button class="btn num-btn">6</button>
+            <button class="btn op-btn">+</button>
+            
+            <button class="btn num-btn">1</button>
+            <button class="btn nun-btn">2</button>
+            <button class="btn num-btn">3</button>
+            <button class="btn equal-btn" id="equal-btn">=</button>
+
+            <button class="btn num-btn zero-btn">0</button>
+            <button class="btn num-btn">.</button>
+
+        </div>
     </div>
 </body>
 </html>
